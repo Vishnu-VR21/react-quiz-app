@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+
+  color: #ebe7ef;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  /* min-height: 100rem; */
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  /* background: linear-gradient(180deg, #22182f 0%, #2c2437 100%); */
+  background-color: #1d0433;
+  background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271600%27%20height%3D%27800%27%20viewBox%3D%270%200%201600%20800%27%3E%3Crect%20fill%3D%27%23aa3333%27%20width%3D%271600%27%20height%3D%27800%27%2F%3E%3Cpath%20fill%3D%27%23FF7%27%20d%3D%27M1102.5%20734.8c2.5-1.2%2024.8-8.6%2025.6-7.5.5.7-3.9%2023.8-4.6%2024.5C1123.3%20752.1%201107.5%20739.5%201102.5%20734.8zM1226.3%20229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1%2012.3c0%200%200%200%200%200-.2.2-.3.5-.4.8%200%20.3%200%20.7.2%201%20.1.1%201.4%202.5%202.1%203.6%202.4%203.7%206.5%2012.1%206.5%2012.2.2.3.4.5.7.6.3%200%20.5-.1.7-.3%200%200%201.8-2.5%202.7-3.6%201.5-1.6%203-3.2%204.6-4.7%201.2-1.2%201.6-1.4%202.1-1.6.5-.3%201.1-.5%202.5-1.9C1226.5%20230.4%201226.6%20229.6%201226.3%20229.1zM33%20770.3C33%20770.3%2033%20770.3%2033%20770.3c0-.7-.5-1.2-1.2-1.2-.1%200-.3%200-.4.1-1.6.2-14.3.1-22.2%200-.3%200-.6.1-.9.4-.2.2-.4.5-.4.9%200%20.2%200%204.9.1%205.9l.4%2013.6c0%20.3.2.6.4.9.2.2.5.3.8.3%200%200%20.1%200%20.1%200%207.3-.7%2014.7-.9%2022-.6.3%200%20.7-.1.9-.3.2-.2.4-.6.4-.9C32.9%20783.3%2032.9%20776.2%2033%20770.3z%27%2F%3E%3Cpath%20fill%3D%27%235ff%27%20d%3D%27M171.1%20383.4c1.3-2.5%2014.3-22%2015.6-21.6.8.3%2011.5%2021.2%2011.5%2022.1C198.1%20384.2%20177.9%20384%20171.1%20383.4zM596.4%20711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6%200-.8.3L574%20712c0%200%200%200%200%200-.2.2-.2.5-.2.9%200%20.3.2.7.4.9.1.1%201.8%202.2%202.8%203.1%203.1%203.1%208.8%2010.5%208.9%2010.6.2.3.5.4.8.4.3%200%20.5-.2.6-.5%200%200%201.2-2.8%202-4.1%201.1-1.9%202.3-3.7%203.5-5.5.9-1.4%201.3-1.7%201.7-2%20.5-.4%201-.7%202.1-2.4C596.9%20713.1%20596.8%20712.3%20596.4%20711.8z%27%2F%3E%3Cg%20fill-opacity%3D%271%27%20fill%3D%27%23FFF%27%3E%3Cpath%20d%3D%27M699.6%20472.7c-1.5%200-2.8-.8-3.5-2.3-.8-1.9%200-4.2%201.9-5%203.7-1.6%206.8-4.7%208.4-8.5%201.6-3.8%201.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6%202-12.8%201.7-3.1%204.1-6.1%207.6-9.1%201.6-1.4%204-1.2%205.3.4%201.4%201.6%201.2%204-.4%205.3-2.8%202.5-4.7%204.7-5.9%207-1.4%202.6-1.9%205.3-1.3%207.6.3%201.4%201%202.8%201.7%204.3.5%201.1%201%202.2%201.5%203.3%202.1%205.6%202%2012-.3%2017.6-2.3%205.5-6.8%2010.1-12.3%2012.5C700.6%20472.6%20700.1%20472.7%20699.6%20472.7zM740.4%20421.4c1.5-.2%203%20.5%203.8%201.9%201.1%201.8.4%204.2-1.4%205.3-3.7%202.1-6.4%205.6-7.6%209.5-1.2%204-.8%208.4%201.1%2012.1.4.9%201%201.7%201.6%202.7%201%201.7%202.2%203.5%203%205.7%201.4%204%201.2%208.7-.6%2013.2-1.4%203.4-3.5%206.6-6.8%2010.1-1.5%201.6-3.9%201.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4%202.6-2.8%204.3-5.3%205.3-7.7%201.1-2.8%201.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8%201.7-5.8%205.7-10.6%2010.9-13.6C738.3%20421.6%20739.4%20421.4%20740.4%20421.4z%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+header img {
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
+header h1 {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.6rem;
+  margin: 0;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #fbfbfb 40%, #24070f 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#last-try {
+  max-width: 40rem;
+  margin: 2rem auto;
+  font-size: 0.8rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+#last-try h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #b1296f;
+  text-transform: uppercase;
+}
+
+#last-try ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  color: #a690c5;
+}
+
+#quiz {
+  max-width: 50rem;
+  margin: auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #AA3333 0%, #552222 100%);
+  border-radius: 8px;
+  /* box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.6); */
+  box-shadow: 1px 1px 8px 4px rgba(12, 5, 32, 0.6);
+  text-align: center;
+}
+
+#question-overview {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.8rem;
+  color: #9082a3;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#question progress {
+  width: 50%;
+  height: 0.5rem;
+  border-radius: 24px;
+  background: #9e5ef8;
+  margin: 0;
+}
+
+#question progress::-webkit-progress-bar {
+  background: #6a558a;
+  border-radius: 24px;
+}
+
+#question progress::-webkit-progress-value {
+  background: #9e5ef8;
+  border-radius: 24px;
+}
+
+#question progress.answered {
+  background: #f8e59c;
+}
+
+#question progress.answered::-webkit-progress-value {
+  background: #f8e59c;
+}
+
+#question progress.answered::-webkit-progress-bar {
+  background: #6a558a;
+}
+
+#question h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0.5rem 0 2.5rem 0;
+  color: #c1b2dd;
+}
+
+#answers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.answer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.answer button {
+  display: inline-block;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 24px;
+  /* background: linear-gradient(180deg, #81f1fb 0%, #73d2f8 100%); */
+  background: #d9c2c9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer button:hover,
+.answer button:focus {
+  /* background: linear-gradient(180deg, #bf48f6 0%, #9b50f2 100%); */
+  background: #da849c;
+  color: white;
+  /* box-shadow: 0 0 4px 2px rgba(255, 200, 60, 0.8); */
+}
+
+.answer button.selected {
+  /* background: linear-gradient(180deg, #fbda81 0%, #f8b173 100%); */
+  background: #f5a76c;
+  color: #2c203d;
+}
+
+.answer button.correct {
+  /* background: linear-gradient(180deg, #a1fa61 0%, #52d482 100%); */
+  background: #5af59d;
+  color: #2c203d;
+}
+
+.answer button.wrong {
+  /* background: linear-gradient(180deg, #f96fb1 0%, #f52b8c 100%); */
+  background: #e75454;
+  color: #2c203d;
+}
+
+#skip-action {
+  margin-top: 2rem;
+}
+
+#skip-action button {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  color: #8d7da3;
+  cursor: pointer;
+}
+
+#skip-action button:hover,
+#skip-action button:focus {
+  color: #c7bfd6;
+}
+
+#summary {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #e0c9c9 0%, #cc97a8 100%);
+  color: #191321;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.6);
+  animation: slide-in-from-bottom 0.7s ease-out;
+}
+
+#summary img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+  background: #ffa3a3;
+}
+
+#summary h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: #353435;
+}
+
+#summary ol {
+  list-style: none;
+  margin: 2rem auto;
+  padding: 0;
+  text-align: center;
+}
+
+#summary li {
+  margin: 2rem 0;
+}
+
+#summary h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d2020;
+  color: #d5cbe3;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#summary .question {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #504858;
+}
+
+#summary .user-answer {
+  margin: 0.25rem 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #251e2f;
+}
+
+#summary .user-answer.correct {
+  color: #054e37;
+}
+
+#summary .user-answer.wrong {
+  color: #730b4b;
+}
+
+#summary .user-answer.skipped {
+  color: #2c085e;
+  font-weight: normal;
+}
+
+#summary-stats {
+  display: flex;
+  gap: 3rem;
+  width: 60%;
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #594276;
+}
+
+#summary-stats p {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#summary-stats .number {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 3rem;
+  color: #594276;
+}
+
+#summary-stats .text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #30273a;
+  margin-top: -0.7rem;
+  margin-left: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+@keyframes slide-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
